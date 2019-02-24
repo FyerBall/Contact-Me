@@ -1,0 +1,94 @@
+/* Gloabl */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0277BD;
+  font-family: monospace, sans-serif;
+}
+
+/* Icons position */
+.contact {
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  cursor: pointer;
+}
+
+/* The Icons */
+.contact i {
+  transition: .3s ease;
+  color: #eee;
+  display: block;
+  background: #4FC3F7;
+  text-align: center;
+  border-radius: 30%;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  margin: 5px auto;
+}
+
+/* Hover effect
+Cloud have done it in a better
+way rather than stacking them on
+top of each other.
+Done it for practice
+*/
+.contact i:hover,
+.emailMe:hover,
+.callMe:hover,
+.github-link:hover{
+  color: #FF8A65;
+}
+
+.emailMe,
+.callMe,
+.githubAccount {
+  position: absolute;
+  top: 0;
+  margin: auto 10px;
+  transition: .8s ease;
+  text-align: center;
+}
+
+.emailMe {
+  top: 12%;
+  left: -100%;
+  color: #eee;
+  z-index: -1;
+}
+
+
+.callMe {
+  top: 44%;
+  left: -100%;
+  color: #eee;
+  z-index: -1;
+}
+.githubAccount {
+  top: 80%;
+  left: -100%;
+  color: #eee;
+  z-index: -1;
+}
+
+.phone:hover .callMe {
+  left: 100%;
+}
+
+.email:hover .emailMe {
+  left: 100%;
+}
+
+.github:hover .githubAccount {
+  left: 100%;
+}
+
+.github-link {
+  text-decoration: none;
+  color: #eee;
+}
